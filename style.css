@@ -1,0 +1,334 @@
+@import url("normalize.css");
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('fonts/roboto-v30-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/roboto-v30-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/roboto-v30-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+         url('fonts/roboto-v30-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/roboto-v30-latin_cyrillic-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('fonts/roboto-v30-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/roboto-v30-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/roboto-v30-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('fonts/roboto-v30-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/roboto-v30-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('fonts/roboto-v30-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/roboto-v30-latin_cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+body{
+    max-width: 1124px;
+    min-width: 422px;
+    margin: 0 auto;
+}
+.header{
+    min-height: 72px;    
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 1);    
+    max-width: 1124px;    
+    width: 100%;
+    box-shadow: 0px 10px 10px -5px rgba(38, 38, 38, 0.16);
+    z-index: 5;
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 81px;
+    padding-left: 81px;
+    align-items: center;            
+}
+.header_logo-pic{
+    padding-top: 30px;
+    padding-bottom: 30px;    
+}
+.heder_button{
+    font-style: normal;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align:center;
+    color:rgba(29, 29, 29, 1);
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border: 1px solid rgba(224, 224, 224, 1);     
+}
+.heder_button:hover{
+    background-color: rgba(117, 117, 117, 0.2);
+}
+.header_basket{
+    padding-left: 27px;
+    width: 12%;
+}
+@media screen and (max-width: 767px){
+.header_basket{
+    display: none;
+    }
+}
+.section_search{
+    margin-top: 150px;
+    padding-left: 81px;
+    padding-right: 81px;
+}
+input {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(98, 98, 98, 1);
+    width: 100%;
+    height: 42px;
+    padding-left: 0px;
+    border: none;
+    border-bottom: 1px solid rgba(98, 98, 98, 1);
+    background: transparent;
+}
+input:focus{    
+    box-shadow: 0px 1px 5px 1px rgba(38, 38, 38, 0.16);
+    border: none;
+}   
+.search-form :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.section_1{
+    padding-left: 81px;
+    padding-right: 81px;
+}
+.name1{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(29, 29, 29, 1);
+    margin-top: 100px;
+}
+.section_2{
+    padding-left: 81px;
+    padding-right: 81px;
+}
+.rub { 
+	line-height: 3px;
+	width: 0.4em;
+	border-bottom: 1px solid rgba(98, 98, 98, 1);
+	display: inline-block;
+}
+.menu_1, .menu_2, .menu_3, .menu_4, .menu_5, .menu_6, .menu_7, .menu_8, .menu_9{
+    text-decoration: none; 
+} 
+.text1 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: rgba(29, 29, 29, 1);
+}
+.text2{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(98, 98, 98, 1);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.text3{
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(29, 29, 29, 1);
+    margin-top: 4px;
+    margin-bottom: 36px;
+}
+.container{
+    margin: 0px;
+    display:inline;
+    padding: 0%;
+}
+.card_1, .card_2, .card_3, .card_4, .card_5, .card_6, .card_7, .card_8, .card_9{
+    margin: 0%;
+    padding: 0%;           
+}
+.card_1:hover, .card_2:hover, .card_3:hover, .card_4:hover, .card_5:hover, .card_6:hover, .card_7:hover, .card_8:hover, .card_9:hover{
+    transform: scale(1.03);
+    transition: 0.15s all;
+    box-shadow: 2px 1px 10px 2px rgba(38, 38, 38, 0.16);       
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.footer{
+    background: rgba(38, 38, 38, 1);
+    margin-top: 80px;
+}
+@media screen and (max-width: 991px){
+.footer{
+    margin-top: 35px;
+    }
+}
+.footer_logo-pic{
+    width: 15%;
+    height: auto;
+    padding-top: 56px;
+    padding-left: 82px;
+    padding-bottom: 42px;
+}
+.line{
+    max-width: 100%;
+    margin-left: 81px;
+    margin-right: 81px;
+    color: rgba(151, 151, 151, 1);
+    margin-bottom: 32px;
+}
+.footer_section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    margin-left: 40px;
+    width: 67%;
+}
+.language{
+    padding-left: 41px;
+}
+.language_form{    
+    background: rgba(151, 151, 151, 0.452);
+    color: rgba(255, 255, 255, 1);
+    width: 227px;
+    height: 40px;
+    padding-left: 48px;    
+    background-image: url(img/world.svg), url(img/Shape.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 16px, 200px;
+    border: none;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    appearance: none; 
+}
+.social1{
+    padding-left: 41px;
+    padding-top: 33px;
+}
+.hashtag{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(73, 161, 68, 1);
+    text-decoration: none;
+}
+.social1_text{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+.social1_text:hover{
+    color: rgba(117, 117, 117, 1);
+}
+.social2{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding-left: 41px;
+    padding-top: 17px;
+}
+li{
+    list-style-type: none;    
+    line-height: 3;
+    z-index: 3;    
+}
+.li-text{
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+.li-text:hover{
+    color: rgba(117, 117, 117, 1);
+}
+ul{
+    margin: 0;
+}
+.footer_section3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 35px;
+    padding-top: 9px;        
+}
+.google{
+    padding-left: 40px;
+}
+.list_section4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 81px;
+    padding-bottom: 30px;
+    max-width: 75%;    
+}
+.btn_up{
+    max-width: 1124px;
+    min-width: 422px;
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    text-align: right;           
+}
+.btn-up-logo{    
+    width: 80px;
+    height: 80px;
+    padding-bottom: 30px;
+    padding-right: 12px;    
+}
